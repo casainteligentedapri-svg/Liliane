@@ -660,7 +660,9 @@ footer a { color: var(--gold); text-decoration: none; }
 /* remove decorative label dashes */
 .eyebrow::before, .label::before, .about-text-block .label::before { display: none !important; }
 
-/* ── TEXTO JUSTIFICADO ── */
+/* ── AJUSTE DE LEITURA DO TEXTO ── */
+/* alinhamento à esquerda com quebras equilibradas:
+   evita os "rios" de espaço em branco do justificado */
 .hero-sub,
 .services .section-inner > p,
 .service-card p,
@@ -671,10 +673,32 @@ footer a { color: var(--gold); text-decoration: none; }
 .diff-content p,
 .testi-text,
 .faq details p {
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
+  text-align: left;
+  text-wrap: pretty;      /* impede palavra sozinha na última linha */
+  hyphens: none;
+  overflow-wrap: break-word;
 }
+
+/* títulos com quebra equilibrada entre as linhas */
+h1, h2, h3,
+.about-text-block h2,
+.step-content h3,
+.diff-content h3,
+.faq summary {
+  text-wrap: balance;
+}
+
+/* largura de leitura confortável nos blocos de texto longo */
+.about-text-block p,
+.when .section-inner > p,
+.step-content p,
+.diff-content p {
+  max-width: 64ch;
+}
+
+/* respiro entre os parágrafos da seção "Quando é possível" */
+.when .section-inner > p { margin-bottom: 14px; }
+.when .section-inner > p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
