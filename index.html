@@ -659,6 +659,22 @@ footer a { color: var(--gold); text-decoration: none; }
 @media (min-width: 640px) { .services-grid { grid-template-columns: 1fr 1fr; } .destaques-grid { grid-template-columns: repeat(4,1fr); } }
 /* remove decorative label dashes */
 .eyebrow::before, .label::before, .about-text-block .label::before { display: none !important; }
+
+/* ── TEXTO JUSTIFICADO ── */
+.hero-sub,
+.services .section-inner > p,
+.service-card p,
+.about-text-block p,
+.when .section-inner > p,
+.check-item p,
+.step-content p,
+.diff-content p,
+.testi-text,
+.faq details p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 </style>
 </head>
 <body>
@@ -724,7 +740,6 @@ footer a { color: var(--gold); text-decoration: none; }
         <p>Reconhecimento ou dissolução da união estável em cartório, com segurança jurídica para o casal e para o patrimônio.</p>
       </div>
     </div>
-    <p style="color:rgba(var(--text-rgb),0.45); font-size:0.85rem; margin-top:20px;">Atendimento em todo o Brasil.</p>
   </div>
 </section>
 
@@ -737,13 +752,13 @@ footer a { color: var(--gold); text-decoration: none; }
     <div class="about-text-block">
       <span class="label">Quem vai te atender</span>
       <h2>Liliane Amorim</h2>
-      <p><strong>Advogada especializada em Inventários, Direito das Sucessões e Regularização Patrimonial.</strong></p>
+      <p><strong>Advogada especializada em Inventários, Sucessões e Regularização Patrimonial.</strong></p>
       <p>Sou advogada, com escritório no Rio de Janeiro e dedico minha atuação ao <strong>Direito Sucessório</strong>, prestando assessoria jurídica a famílias na condução de inventários, partilhas de bens e demais questões relacionadas ao patrimônio familiar. Sempre que possível priorizo soluções pela via extrajudicial, proporcionando procedimentos mais ágeis, seguros e menos burocráticos.</p>
       <p>Minha principal área de atuação é a condução de <strong>inventários extrajudiciais e judiciais</strong>, acompanhando cada etapa do procedimento, desde a análise inicial até a efetiva transferência dos bens aos herdeiros.</p>
       <p>Também atuo na regularização de imóveis, conduzindo procedimentos de adjudicação compulsória, usucapião e registros perante o Registro Geral de Imóveis (RGI), garantindo segurança jurídica na regularização do patrimônio.</p>
       <p>Além da área sucessória, presto assessoria em <strong>divórcio consensual, reconhecimento e dissolução de união estável e partilha de bens</strong>, sempre buscando soluções eficientes, transparentes e adequadas às necessidades de cada cliente.</p>
       <p>Acredito que questões patrimoniais e familiares exigem não apenas conhecimento técnico, mas também atenção e sensibilidade. Por isso, conduzo cada caso com atendimento próximo, comunicação clara e total transparência quanto aos honorários e às etapas do procedimento.</p>
-      <p>O atendimento acontece presencialmente no Rio de Janeiro e também <strong>de forma totalmente online</strong>, o que permite acompanhar clientes de qualquer lugar do Brasil com a mesma proximidade e atenção.</p>
+      <p>O atendimento pode ser realizado de forma presencial ou online no Rio de Janeiro, ou de forma <strong>totalmente online</strong> para clientes de qualquer lugar do Brasil. Em ambas as modalidades, você conta com um acompanhamento próximo, personalizado e dedicado durante todas as etapas do seu caso.</p>
       <div class="about-tags">
         <span class="tag">Regularização de imóveis</span>
         <span class="tag">Adjudicação compulsória</span>
@@ -782,8 +797,8 @@ footer a { color: var(--gold); text-decoration: none; }
         <p>São atendidos os <strong>requisitos legais</strong> aplicáveis ao caso</p>
       </div>
     </div>
-    <p style="color:rgba(var(--text-rgb),0.55); font-size:0.95rem; margin-top:20px;">Situações como a existência de testamento, herdeiros menores ou incapazes ou outras particularidades não impedem, por si sós, a realização do inventário em cartório. Cada caso deve ser analisado individualmente para verificar se atende às exigências da legislação vigente.</p>
-    <p style="color:rgba(var(--text-rgb),0.55); font-size:0.95rem;">A análise jurídica inicial é essencial para identificar a melhor solução e conduzir o procedimento com segurança e tranquilidade para toda a família.</p>
+    <p style="color:rgba(var(--text-rgb),0.55); font-size:0.95rem; margin-top:20px;">A existência de testamento, herdeiros menores ou incapazes, bem como outras particularidades, não impede por si só a realização do inventário em cartório. Cada caso deve ser analisado individualmente, à luz da legislação vigente, para verificar a viabilidade do procedimento extrajudicial.</p>
+    <p style="color:rgba(var(--text-rgb),0.55); font-size:0.95rem;">Uma análise jurídica cuidadosa permite identificar a melhor solução para o caso concreto, proporcionando segurança, clareza e tranquilidade durante todas as etapas do inventário.</p>
   </div>
 </section>
 
@@ -822,28 +837,6 @@ footer a { color: var(--gold); text-decoration: none; }
           <p>A escritura poderá ser assinada presencialmente no cartório ou, quando permitido, de forma eletrônica pela plataforma e-Notariado, por videoconferência. Após a assinatura, acompanho as providências necessárias perante o Registro de Imóveis, instituições financeiras e demais órgãos competentes, para que os bens sejam efetivamente transferidos e regularizados em nome dos herdeiros.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- NÚMEROS -->
-<section class="numbers">
-  <div class="numbers-grid">
-    <div class="num-card">
-      <span class="num-big">15+</span>
-      <span class="num-label">Anos de experiência</span>
-    </div>
-    <div class="num-card">
-      <span class="num-big">★</span>
-      <span class="num-label">Foco no cliente</span>
-    </div>
-    <div class="num-card">
-      <span class="num-big">100%</span>
-      <span class="num-label">Atendimento online</span>
-    </div>
-    <div class="num-card">
-      <span class="num-big">RJ</span>
-      <span class="num-label">Rio de Janeiro</span>
     </div>
   </div>
 </section>
@@ -969,7 +962,7 @@ footer a { color: var(--gold); text-decoration: none; }
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.057 23.428a.5.5 0 0 0 .615.614l5.652-1.463A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.031-1.385l-.36-.214-3.733.967.993-3.62-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.429 0 9.818 4.388 9.818 9.818 0 5.429-4.389 9.818-9.818 9.818z"/></svg>
       Quero falar com a Liliane
     </a>
-    <p class="cta-note">Atendimento de segunda à sexta. Horário: 9h às 18h.<br>Centro / Rio de Janeiro.<br>Contato:<br>(21) 99867-6669<br>E-mail: lilianeamorimv@gmail.com</p>
+    <p class="cta-note">Atendimento de segunda à sexta. Horário: 9h às 18h.<br>Rio de Janeiro.<br>Contato:<br>(21) 99867-6669<br>E-mail: lilianeamorimv@gmail.com</p>
   </div>
 </section>
 
