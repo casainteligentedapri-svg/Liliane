@@ -699,6 +699,19 @@ h1, h2, h3,
 /* respiro entre os parágrafos da seção "Quando é possível" */
 .when .section-inner > p { margin-bottom: 14px; }
 .when .section-inner > p:last-child { margin-bottom: 0; }
+
+/* ── CORREÇÃO DO FUNDO EM DUAS CORES NO TOPO ── */
+/* o véu decorativo ocupava só a metade direita e criava uma
+   emenda vertical visível; agora cobre a largura toda e some no mobile */
+.hero::before {
+  width: 100%;
+  background: linear-gradient(135deg, transparent 55%, rgba(234,226,216,0.32) 100%);
+}
+@media (max-width: 900px) {
+  .hero::before { display: none; }
+  .hero-glow { display: none; }
+  .hero { min-height: auto; padding: 56px 24px 72px; }
+}
 </style>
 </head>
 <body>
